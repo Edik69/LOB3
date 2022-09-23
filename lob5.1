@@ -1,0 +1,12 @@
+import math
+x = float(input('задайте x='))
+y = 0.0
+if x>=0.53:
+    y = 3-0.127*x+math.log(x,10)*math.sqrt(x+2)
+elif  x>-1.2 and x<0.53:
+    y=2.35*math.e*math.pow(1,4*x-1) + math.cos(x)
+elif x<-1.2:
+    y = 0.11*math.fabs(x+3*math.cos(x))
+else:
+    print('Помилка')
+print(y)
