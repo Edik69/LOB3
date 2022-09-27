@@ -5,9 +5,5 @@ h=float(input("Введіть число h:"))
 x=a
 for i in range(100):
     f=x/math.pow(2,x)+math.pow(math.e,x)
-    f = round(f, 4)
-    print(i, 'x =', x, 'f =', f)
+    print( 'x =', x, 'f =', f)
     x = x + h
-    x = round(x, 3)
-    if x > b:
-        break
